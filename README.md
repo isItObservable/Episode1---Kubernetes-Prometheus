@@ -1,5 +1,7 @@
 # Is it Observable?
-##K8s and Prometheus
+<p align="center"><img src="/image/logo.png" width="40%" alt="Prometheus Logo" /></p>
+## K8s and Prometheus
+<p align="center"><img src="/image/k8sprom.png" width="40%" alt="Prometheus Logo" /><p align="center"><img src="/image/prometheus.png" width="40%" alt="Prometheus Logo" /></p>
 Repository containing the files for the Episode 1 of Is it Observable : K8s and Prometheus
 
 
@@ -27,7 +29,7 @@ cloudprofiler.googleapis.com \
 ### 2.Create a GKE cluster
 ```
 ZONE=us-central1-b
-gcloud container clusters create isitobservable \
+gcloud containr clusters create isitobservable \
 --project=${PROJECT_ID} --zone=${ZONE} \
 --machine-type=e2-standard-2 --num-nodes=4
 ```
