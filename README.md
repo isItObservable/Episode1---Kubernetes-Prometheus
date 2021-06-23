@@ -36,20 +36,20 @@ gcloud containr clusters create isitobservable \
 ```
 ### 3.Clone Github repo
 ```
-git clone https://github.com/dynatrace-perfclinics/prometheus-k8s-pipeline
-cd prometheus-k8s-pipeline
+git clone https://github.com/isItObservable/Episode1---Kubernetes-Prometheus
+cd Episode1---Kubernetes-Prometheus
 ```
-### Deploy the sample Application
-#### 1.HipsterShop
+### 4. Deploy Prometheus
+#### HipsterShop
 ```
 cd hipstershop
 ./setup.sh
 ```
-### 2. Prometheus
+### Prometheus
 ```
 helm install prometheus stable/prometheus-operator
 ```
-### 2. Expose Grafana
+### Expose Grafana
 ```
 kubectl get svc
 kubectl edit svc prometheus-grafana
