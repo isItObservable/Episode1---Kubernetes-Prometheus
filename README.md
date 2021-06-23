@@ -95,9 +95,11 @@ cd ..\grafana
 kubectl apply -f ingress.yaml
 ```
 Get the login user and password of Grafana
+* For the password :
 ```
-#For the password :
 kubectl get secret --namespace default prometheus-grafana -o jsonpath="{.data.admin-password}" | base64 --decode
-#For the login user:
+```
+* For the login user:
+```
 kubectl get secret --namespace default prometheus-grafana -o jsonpath="{.data.admin-user}" | base64 --decode
 ```
