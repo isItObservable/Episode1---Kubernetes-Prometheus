@@ -1,7 +1,8 @@
 # Is it Observable?
 <p align="center"><img src="/image/logo.png" width="40%" alt="Prometheus Logo" /></p>
+
 ## K8s and Prometheus
-<p align="center"><img src="/image/k8sprom.png" width="40%" alt="Prometheus Logo" /><p align="center"><img src="/image/prometheus.png" width="40%" alt="Prometheus Logo" /></p>
+<p align="center"><img src="/image/k8sprom.png" width="40%" alt="Prometheus Logo" /></p>
 Repository containing the files for the Episode 1 of Is it Observable : K8s and Prometheus
 
 
