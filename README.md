@@ -1,22 +1,28 @@
-# Is it Observable?
-<p align="center"><img src="/image/logo.png" width="40%" alt="Prometheus Logo" /></p>
+# How to collect metrics in your Kubernetes cluster
+
+This repository is here to guide you through the GitHub tutorial that goes hand-in-hand with a video available on YouTube and a detailed blog post on my website. 
+Together, these resources are designed to give you a complete understanding of the topic.
+
+Here are the links to the related assets:
+- YouTube Video: [How to collect metrics in K8s](https://www.youtube.com/watch?v=JQrk6HwlN78)
+- Blog Post: [How to collect metrics in a Kubernetes cluster](https://isitobservable.io/observability/kubernetes/collect-metrics-in-kubernetes-cluster)
+
+Feel free to explore the materials, star the repository, and follow along at your own pace.
 
 ## K8s and Prometheus
 <p align="center"><img src="/image/k8sprom.png" width="40%" alt="Prometheus Logo" /></p>
-Repository containing the files for the Episode 1 of Is it Observable : K8s and Prometheus
 
-
-This repository showcase the usage of the Prometheus  by using GKE with :
-- the HipsterShop
+This repository showcases the usage of Prometheus by using GKE with the HipsterShop
 
 
 ## Prerequisite
-The following tools need to be install on your machine :
+The following tools need to be installed on your machine :
 - jq
 - kubectl
 - git
-- gcloud ( if you are using GKE)
+- gcloud (if you're using GKE)
 - Helm
+  
 ### 1.Create a Google Cloud Platform Project
 ```
 PROJECT_ID="<your-project-id>"
@@ -89,7 +95,7 @@ spec:
 status:
   loadBalancer: {}
 ```
-Deploy the ingress by making sure to replace the service name of your grafan
+Deploy the ingress by making sure to replace the service name of your Grafana
 ```
 cd ..\grafana
 kubectl apply -f ingress.yaml
